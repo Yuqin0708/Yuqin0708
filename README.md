@@ -32,8 +32,9 @@
 英文寫作小老師：用 OpenAI 提供文法修正、更自然的寫法與中翻英。
 **Python + Streamlit + OpenAI API（gpt-4o-mini）**，可在側邊欄輸入自己的 OpenAI API Key 線上試用。
 
-### 🔎 整理中
-RAG 問答系統（Vue + FastAPI）與課程實作（資料庫、Power BI、雲端與 IoT），整理完成後會陸續放上來。
+### 💬 [rag-knowledge-base](https://github.com/Yuqin0708/rag-knowledge-base)
+以自訂知識庫為基礎的問答系統（RAG）：新增知識後，系統以 OpenAI 產生向量並存入 ChromaDB，提問時檢索最相近的 3 筆知識，再由 GPT 依這些內容回答。
+**Vue 3 + Vuetify + TypeScript → FastAPI → ChromaDB + OpenAI**，包含聊天頁、知識庫新增／搜尋／編輯／刪除，並附 mock server 可在沒有 API Key 時試用前端。
 
 ## 📫 聯絡
 mail:hello@yuqin.dev
