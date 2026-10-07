@@ -18,11 +18,12 @@
 
 ### 🎲 [Lorrator](https://github.com/jason9294/Lorrator)（團隊專題，2 人）
 基於**知識圖譜與 LLM 的 RAG TRPG 遊戲主持人代理系統**：主持人上傳劇本，系統自動建立知識圖譜與向量索引，玩家在房間中與 AI 主持人即時互動。
-與組員共同開發（repo 在組員帳號下，多數程式為兩人一起撰寫、由組員代為提交）。我主責 **前端**：
+與組員共同開發（repo 在組員帳號下，多數程式為兩人一起撰寫、由組員代為提交）。我主責 **前端**，並負責後端的文本切塊模組：
 - Vue 3 + TypeScript + Pinia + shadcn-vue + Tailwind CSS：登入／註冊、劇本列表、跑團房間頁面
 - 以 Cytoscape.js 做劇本知識圖譜互動視覺化（含 Ctrl+K 節點搜尋）：從內建 cose 改用 fcose，並調整排斥力、邊長與迭代次數，解決節點重疊
 - 亮色／暗色主題切換
-- 與組員共同串接 WebSocket 即時對話；後端（FastAPI、PostgreSQL／pgvector、Neo4j）與 RAG 管線由組員主責
+- 後端文本切塊模組：以 tiktoken 依 token 長度做滑動視窗切分並保留重疊，含參數檢查與單元測試，是劇本處理管線的第一步
+- 與組員共同串接 WebSocket 即時對話；其餘後端（FastAPI、PostgreSQL／pgvector、Neo4j）與 RAG 管線由組員主責
 
 ### 🐱 [cat-breed-classifier](https://github.com/Yuqin0708/cat-breed-classifier)
 上傳貓咪照片，辨識 12 種常見品種；最高機率低於 75% 時判定為米克斯。
