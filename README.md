@@ -16,17 +16,17 @@
 
 ## 📌 精選作品
 
-### 🎲 [Lorrator](https://github.com/jason9294/Lorrator)（團隊專題）
+### 🎲 [Lorrator](https://github.com/jason9294/Lorrator)（團隊專題，2 人）
 基於**知識圖譜與 LLM 的 RAG TRPG 遊戲主持人代理系統**：主持人上傳劇本，系統自動建立知識圖譜與向量索引，玩家在房間中與 AI 主持人即時互動。
-我負責 **前端**：
-- Vue 3 + TypeScript + Pinia + shadcn-vue + Tailwind CSS
-- 以單一 WebSocket 連線搭配訊息型別分派，實作 AI 即時回應與動態「輸入中」提示
-- 以 Cytoscape.js（fcose 佈局）做劇本知識圖譜視覺化，調整佈局參數解決節點重疊
-- 亮色／暗色主題與 Ctrl+K 節點搜尋
+與組員共同開發（repo 在組員帳號下，多數程式為兩人一起撰寫、由組員代為提交）。我主責 **前端**：
+- Vue 3 + TypeScript + Pinia + shadcn-vue + Tailwind CSS：登入／註冊、劇本列表、跑團房間頁面
+- 以 Cytoscape.js 做劇本知識圖譜互動視覺化（含 Ctrl+K 節點搜尋）：從內建 cose 改用 fcose，並調整排斥力、邊長與迭代次數，解決節點重疊
+- 亮色／暗色主題切換
+- 與組員共同串接 WebSocket 即時對話；後端（FastAPI、PostgreSQL／pgvector、Neo4j）與 RAG 管線由組員主責
 
 ### 🐱 [cat-breed-classifier](https://github.com/Yuqin0708/cat-breed-classifier)
 上傳貓咪照片，辨識 12 種常見品種；最高機率低於 75% 時判定為米克斯。
-**Vue 3 + Vuetify → FastAPI → PyTorch ResNet50**，包含前端、後端推論 API 與訓練腳本。
+**Vue 3 + Vuetify → FastAPI → PyTorch ResNet50**。我負責前端、後端推論 API 與部署；模型訓練流程以開源專案為基礎（詳見 repo 的 README）。
 
 ### ✏️ [English-writing-bot-1](https://github.com/Yuqin0708/English-writing-bot-1)
 英文寫作小老師：用 OpenAI 提供文法修正、更自然的寫法與中翻英。
@@ -37,4 +37,4 @@
 **Vue 3 + Vuetify + TypeScript → FastAPI → ChromaDB + OpenAI**，包含聊天頁、知識庫新增／搜尋／編輯／刪除，並附 mock server 可在沒有 API Key 時試用前端。
 
 ## 📫 聯絡
-mail:hello@yuqin.dev
+[hello@yuqin.dev](mailto:hello@yuqin.dev)
